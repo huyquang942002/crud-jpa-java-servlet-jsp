@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
-@WebServlet(name = "TaoSVServlet", value = "/TaoSVServlet1")
+@WebServlet(name = "TaoSVServlet", value = "/TaoSVServlet")
 public class TaoSVServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,7 +24,7 @@ public class TaoSVServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
 
-        String url = "/ViewServlet1";
+        String url = "/ViewServlet";
         ProductDAO productDAO = new ProductDAO();
         ProductEntity product = new ProductEntity();
         product.setTitle(request.getParameter("title"));

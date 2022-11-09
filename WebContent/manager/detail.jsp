@@ -18,9 +18,6 @@
         <div class="col-md-4 mb-3">
             <label for="validationDefaultUsername">Price</label>
             <div class="input-group">
-<%--                <div class="input-group-prepend">--%>
-<%--                    <span class="input-group-text" id="inputGroupPrepend2">@</span>--%>
-<%--                </div>--%>
                 <input type="text" class="form-control" id="validationDefaultUsername" name="price" placeholder="560000" aria-describedby="inputGroupPrepend2" required value="${o.price}">
             </div>
         </div>
@@ -41,14 +38,6 @@
     </div>
     <label >Image</label>
     <input type="text" class="form-control" id="validationDefault15" name="image" placeholder="Ảnh xinh" value="${o.image}">
-<%--    <input type="date" id="birthday" name="birthday" value="${o.birthday}">--%>
-<%--    <div class="form-group">--%>
-<%--        <div class="form-check">--%>
-<%--            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>--%>
-<%--            <label class="form-check-label" for="invalidCheck2">--%>
-<%--                Agree to terms and conditions--%>
-<%--            </label>--%>
-<%--        </div>--%>
-<%--    </div>--%>
+
     <button class="btn btn-primary" type="submit">Update</button>
 </form>

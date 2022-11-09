@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "UpdateServlet", value = "/UpdateServlet1")
+@WebServlet(name = "UpdateServlet", value = "/UpdateServlet")
 public class UpdateServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -30,7 +30,7 @@ public class UpdateServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
 
-        String url = "/ViewServlet1";
+        String url = "/ViewServlet";
         ProductDAO ProductDAO = new ProductDAO();
         ProductEntity product = new ProductEntity();
         product.setId(Long.parseLong(request.getParameter("id")));

@@ -31,9 +31,6 @@ public class ProductDAO {
     try
     {
       transaction = session.beginTransaction();
-      // Error Could not resolve root entity, Cannot resolve symbol 'Product Entity'
-      // --> change version or use "jakarta.persistence" for version hibernate > 6.
-      // https://stackoverflow.com/questions/43716068/invalid-syntax-error-type-myisam-in-ddl-generated-by-hibernate
       Query<ProductEntity> query = session.createQuery("FROM ProductEntity", ProductEntity.class);
       products = query.list();
       return products;

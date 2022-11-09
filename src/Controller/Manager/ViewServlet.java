@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "ViewServlet", value = "/ViewServlet1")
+@WebServlet(name = "ViewServlet", value = "/ViewServlet")
 public class ViewServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
